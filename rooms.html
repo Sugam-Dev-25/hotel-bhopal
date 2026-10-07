@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites | Hotel bhopal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#2c3531',
+                            green: '#3b4d43',
+                            light: '#f4f4f2',
+                            accent: '#c5a059'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-brand-dark font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-brand-dark flex items-center gap-2">
+                <i class="fa-solid fa-mountain-sun text-brand-accent"></i> Hotel bhopal
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-widest uppercase">
+                <a href="index.html" class="hover:text-brand-accent transition">Home</a>
+                <a href="rooms.html" class="text-brand-accent border-b-2 border-brand-accent pb-1">Rooms & Amenities</a>
+                <a href="gallery.html" class="hover:text-brand-accent transition">Gallery</a>
+                <a href="contact.html" class="hover:text-brand-accent transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://wa.me/1234567890?text=Hello,%20I%20would%20like%20to%20inquire%20about%20booking%20a%20chalet." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                </a>
+                <a href="rooms.html" class="bg-brand-dark hover:bg-brand-green text-white px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-brand-dark text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-brand-accent font-medium uppercase text-sm">Home</a>
+            <a href="rooms.html" class="block py-2 text-gray-700 hover:text-brand-accent font-medium uppercase text-sm">Rooms & Amenities</a>
+            <a href="gallery.html" class="block py-2 text-gray-700 hover:text-brand-accent font-medium uppercase text-sm">Gallery</a>
+            <a href="contact.html" class="block py-2 text-gray-700 hover:text-brand-accent font-medium uppercase text-sm">Contact</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://wa.me/1234567890" class="bg-emerald-600 text-white text-center py-2.5 rounded-md text-xs uppercase font-semibold flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="rooms.html" class="bg-brand-dark text-white text-center py-2.5 rounded-md text-xs uppercase font-semibold">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+<section class="relative bg-cover bg-center py-36 text-white text-center" style="background-image: url('https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <!-- Dark Gradient Overlay for Readability -->
+    <div class="absolute inset-0 bg-brand-dark/60 backdrop-blur-[2px]"></div>
+    
+    <div class="relative max-w-4xl mx-auto px-4 z-10">
+        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brand-accent block mb-3">Accommodations</span>
+        <h1 class="font-serif text-4xl sm:text-6xl font-bold mb-4">Select Your Chalet or Suite</h1>
+        <p class="text-gray-200 text-base max-w-xl mx-auto font-light">Experience refined comfort with handmade wood finishings, panoramic balconies, and elite modern amenities.</p>
+    </div>
+</section>
+
+    <!-- Rooms Listing Grid (6 Rooms Total) -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Room Card 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition flex flex-col justify-between border border-gray-100">
+                <div>
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Alpine Sanctuary Suite" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-brand-accent text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Popular</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-xs text-gray-500 space-x-4 mb-3">
+                            <span><i class="fa-solid fa-user-group text-brand-accent mr-1"></i> 2 Guests</span>
+                            <span><i class="fa-solid fa-bed text-brand-accent mr-1"></i> King Bed</span>
+                            <span><i class="fa-solid fa-ruler-combined text-brand-accent mr-1"></i> 450 sq ft</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Alpine Sanctuary Suite</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">Featuring vaulted cedar ceilings, a stone fireplace, and a private balcony looking over the evergreen valley.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-[10px] uppercase text-gray-400 block font-semibold">Starting From</span>
+                        <span class="font-serif text-lg font-bold text-brand-dark">$350 <span class="text-xs font-sans text-gray-500 font-normal">/ night</span></span>
+                    </div>
+                    <a href="room-detail.html?room=alpine-suite" class="bg-brand-dark hover:bg-brand-accent text-white px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition">View Room</a>
+                </div>
+            </div>
+
+            <!-- Room Card 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition flex flex-col justify-between border border-gray-100">
+                <div>
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Willow Creek Chalet" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-xs text-gray-500 space-x-4 mb-3">
+                            <span><i class="fa-solid fa-user-group text-brand-accent mr-1"></i> 3 Guests</span>
+                            <span><i class="fa-solid fa-bed text-brand-accent mr-1"></i> Queen + Twin</span>
+                            <span><i class="fa-solid fa-ruler-combined text-brand-accent mr-1"></i> 520 sq ft</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Willow Creek Chalet</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">A peaceful corner chalet designed with rustic warm timber, deep soaking tub, and uninterrupted mountain views.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-[10px] uppercase text-gray-400 block font-semibold">Starting From</span>
+                        <span class="font-serif text-lg font-bold text-brand-dark">$420 <span class="text-xs font-sans text-gray-500 font-normal">/ night</span></span>
+                    </div>
+                    <a href="room-detail.html?room=willow-chalet" class="bg-brand-dark hover:bg-brand-accent text-white px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition">View Room</a>
+                </div>
+            </div>
+
+            <!-- Room Card 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition flex flex-col justify-between border border-gray-100">
+                <div>
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Grand Double Suite" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Family</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-xs text-gray-500 space-x-4 mb-3">
+                            <span><i class="fa-solid fa-user-group text-brand-accent mr-1"></i> 4 Guests</span>
+                            <span><i class="fa-solid fa-bed text-brand-accent mr-1"></i> 2 King Beds</span>
+                            <span><i class="fa-solid fa-ruler-combined text-brand-accent mr-1"></i> 700 sq ft</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Grand Double Suite</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">Spacious multi-room luxury suite featuring dual fireplaces, panoramic windows, and an expansive lounge deck.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-[10px] uppercase text-gray-400 block font-semibold">Starting From</span>
+                        <span class="font-serif text-lg font-bold text-brand-dark">$580 <span class="text-xs font-sans text-gray-500 font-normal">/ night</span></span>
+                    </div>
+                    <a href="room-detail.html?room=double-suite" class="bg-brand-dark hover:bg-brand-accent text-white px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition">View Room</a>
+                </div>
+            </div>
+
+            <!-- Room Card 4 (New) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition flex flex-col justify-between border border-gray-100">
+                <div>
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Pine View Penthouse" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-brand-accent text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Exclusive</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-xs text-gray-500 space-x-4 mb-3">
+                            <span><i class="fa-solid fa-user-group text-brand-accent mr-1"></i> 2 Guests</span>
+                            <span><i class="fa-solid fa-bed text-brand-accent mr-1"></i> Super King</span>
+                            <span><i class="fa-solid fa-ruler-combined text-brand-accent mr-1"></i> 600 sq ft</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Pine View Penthouse</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">Perched at the highest tier of the resort, offering wraparound glass walls and a private stargazing terrace.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-[10px] uppercase text-gray-400 block font-semibold">Starting From</span>
+                        <span class="font-serif text-lg font-bold text-brand-dark">$650 <span class="text-xs font-sans text-gray-500 font-normal">/ night</span></span>
+                    </div>
+                    <a href="room-detail.html?room=pine-penthouse" class="bg-brand-dark hover:bg-brand-accent text-white px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition">View Room</a>
+                </div>
+            </div>
+
+            <!-- Room Card 5 (New) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition flex flex-col justify-between border border-gray-100">
+                <div>
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80" alt="Summit Horizon Chalet" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-xs text-gray-500 space-x-4 mb-3">
+                            <span><i class="fa-solid fa-user-group text-brand-accent mr-1"></i> 3 Guests</span>
+                            <span><i class="fa-solid fa-bed text-brand-accent mr-1"></i> King Bed</span>
+                            <span><i class="fa-solid fa-ruler-combined text-brand-accent mr-1"></i> 490 sq ft</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Summit Horizon Chalet</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">A tranquil escape featuring minimalist natural stone decor, an indoor Jacuzzi, and a cozy reading nook.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-[10px] uppercase text-gray-400 block font-semibold">Starting From</span>
+                        <span class="font-serif text-lg font-bold text-brand-dark">$470 <span class="text-xs font-sans text-gray-500 font-normal">/ night</span></span>
+                    </div>
+                    <a href="room-detail.html?room=summit-horizon" class="bg-brand-dark hover:bg-brand-accent text-white px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition">View Room</a>
+                </div>
+            </div>
+
+            <!-- Room Card 6 (New) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition flex flex-col justify-between border border-gray-100">
+                <div>
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Canyon Ridge Villa" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Luxury</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-xs text-gray-500 space-x-4 mb-3">
+                            <span><i class="fa-solid fa-user-group text-brand-accent mr-1"></i> 5 Guests</span>
+                            <span><i class="fa-solid fa-bed text-brand-accent mr-1"></i> 3 Queen Beds</span>
+                            <span><i class="fa-solid fa-ruler-combined text-brand-accent mr-1"></i> 850 sq ft</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Canyon Ridge Villa</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">An expansive multi-level villa complete with a private outdoor fire pit, full kitchen, and premium designer lounge.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-[10px] uppercase text-gray-400 block font-semibold">Starting From</span>
+                        <span class="font-serif text-lg font-bold text-brand-dark">$790 <span class="text-xs font-sans text-gray-500 font-normal">/ night</span></span>
+                    </div>
+                    <a href="room-detail.html?room=canyon-villa" class="bg-brand-dark hover:bg-brand-accent text-white px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition">View Room</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890?text=Hello,%20I%20would%20like%20to%20book%20a%20room." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-brand-dark via-stone-950 to-black text-white pt-24 pb-12 relative overflow-hidden border-t border-brand-accent/20">
+        <!-- Decorative Ambient Glows -->
+        <div class="absolute -top-32 left-1/4 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-10 w-80 h-80 bg-emerald-900/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Top Section: Asymmetric Split (Massive Brand vs Structured Links) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-white/10">
+                
+                <!-- Left Side: Brand Statement & Socials (Span 5) -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-[0.3em] text-brand-accent font-semibold block mb-2">Mountain Sanctuary</span>
+                        <a href="index.html" class="font-serif text-4xl sm:text-5xl font-bold tracking-wide text-white block">Hotel bhopal</a>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light max-w-md">
+                        An exclusive mountain retreat designed for travelers seeking serenity, comfort, and uncompromising natural beauty amidst the alpine peaks.
+                    </p>
+                    
+                    <!-- Social Pills -->
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xs text-gray-500 uppercase tracking-widest mr-2">Follow</span>
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#" aria-label="Twitter" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-twitter text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Links & Contact Grouped Creatively (Span 7) -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8 lg:pl-12">
+                    
+                    <!-- Navigation -->
+                    <div class="space-y-4">
+                        <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Explore</h4>
+                        <ul class="space-y-3 text-xs text-gray-300 font-light">
+                            <li><a href="index.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Home</a></li>
+                            <li><a href="rooms.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Rooms & Amenities</a></li>
+                            <li><a href="gallery.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Gallery</a></li>
+                            <li><a href="contact.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Chalets -->
+                    <div class="space-y-4">
+                        <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Residences</h4>
+                        <ul class="space-y-3 text-xs text-gray-300 font-light">
+                            <li><a href="room-detail.html?room=alpine-suite" class="hover:text-brand-accent transition-colors duration-200 inline-block">Alpine Sanctuary Suite</a></li>
+                            <li><a href="room-detail.html?room=willow-chalet" class="hover:text-brand-accent transition-colors duration-200 inline-block">Willow Creek Chalet</a></li>
+                            <li><a href="room-detail.html?room=double-suite" class="hover:text-brand-accent transition-colors duration-200 inline-block">Grand Double Suite</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Meta -->
+                    <div class="space-y-4">
+                        <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Direct</h4>
+                        <ul class="space-y-3 text-xs text-gray-300 font-light">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>742 Alpine Ridge Road, bhopal, India</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-phone text-brand-accent shrink-0"></i>
+                                <a href="tel:+15552345678" class="hover:text-brand-accent transition"> +1 (555) 234-5678</a>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-envelope text-brand-accent shrink-0"></i>
+                                <a href="mailto:stay@hotelbhopal.com" class="hover:text-brand-accent transition">stay@hotelbhopal.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Middle Section: Floating Newsletter Card Banner -->
+            <div class="py-12 border-b border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-1 text-center md:text-left">
+                    <h4 class="font-serif text-lg font-medium text-white">Receive Seasonal Invitations</h4>
+                    <p class="text-xs text-gray-400">Be the first to experience our private winter retreats and exclusive offers.</p>
+                </div>
+                <form class="flex w-full md:w-auto max-w-md items-center">
+                    <input type="email" placeholder="Your email address" class="bg-white/5 border border-white/10 text-xs px-4 py-3.5 rounded-l-md focus:outline-none focus:border-brand-accent text-white placeholder-gray-500 w-full md:w-72 transition">
+                    <button type="submit" class="bg-brand-accent text-brand-dark font-medium text-xs px-6 py-3.5 rounded-r-md hover:bg-white transition whitespace-nowrap">Join</button>
+                </form>
+            </div>
+
+            <!-- Bottom Copyright & Legal Links -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 Hotel bhopal. All rights reserved. Curated for the wild.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gray-300 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-300 transition">Terms of Service</a>
+                    <a href="#" class="hover:text-gray-300 transition">Cookies</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
