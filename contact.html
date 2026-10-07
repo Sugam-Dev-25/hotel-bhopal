@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Hotel bhopal</title>
+    <title>Contact Us | Hotel Bhopal</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -31,10 +32,10 @@
 <body class="bg-brand-light text-brand-dark font-sans antialiased">
 
     <!-- Sticky Navigation -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-brand-dark flex items-center gap-2">
-                <i class="fa-solid fa-mountain-sun text-brand-accent"></i> Hotel bhopal
+                <i class="fa-solid fa-mountain-sun text-brand-accent"></i> Hotel Bhopal
             </a>
             
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-widest uppercase">
@@ -71,47 +72,72 @@
     </header>
 
     <!-- Page Header -->
-
-
-        <section class="relative bg-cover bg-center py-36 text-white text-center" style="background-image: url('https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-    <!-- Dark Gradient Overlay for Readability -->
-    <div class="absolute inset-0 bg-brand-dark/60 backdrop-blur-[2px]"></div>
-    
-    <div class="relative max-w-4xl mx-auto px-4 z-10">
-        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brand-accent block mb-3">Get in Touch</span>
-        <h1 class="font-serif text-4xl sm:text-6xl font-bold mb-4">We Are Here to Assist You</h1>
-        <p class="text-gray-200 text-base max-w-xl mx-auto font-light">Reach out for bookings, custom inquiries, or directions to our mountain sanctuary.</p>
-    </div>
-</section>
+    <section class="relative bg-cover bg-center py-36 text-white text-center" style="background-image: url('https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=1474&auto=format&fit=crop');">
+        <!-- Dark Gradient Overlay for Readability -->
+        <div class="absolute inset-0 bg-brand-dark/60 backdrop-blur-[2px]"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 z-10">
+            <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brand-accent block mb-3">Get in Touch</span>
+            <h1 class="font-serif text-4xl sm:text-6xl font-bold mb-4">We Are Here to Assist You</h1>
+            <p class="text-gray-200 text-base max-w-xl mx-auto font-light">Reach out for bookings, custom inquiries, or directions to our luxury sanctuary in Bhopal.</p>
+        </div>
+    </section>
 
     <!-- Contact Form & Info Section -->
     <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             
-            <!-- Contact Form -->
+            <!-- Contact Form with Expanded Fields -->
             <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-200">
                 <h3 class="font-serif text-2xl font-bold mb-2">Send Us a Message</h3>
-                <p class="text-xs text-gray-500 mb-6">Fill out the form below and our guest concierge will reply via email promptly.</p>
+                <p class="text-xs text-gray-500 mb-6">Fill out the form below and our guest concierge will reply promptly.</p>
                 
-                <form action="mailto:stay@cozystay.com" method="POST" enctype="text/plain" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Your Full Name</label>
-                        <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+                <form action="mailto:stay@hotelbhopal.com" method="POST" enctype="text/plain" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Your Full Name</label>
+                            <input type="text" required placeholder="John Doe" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Email Address</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Email Address</label>
-                        <input type="email" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Phone Number</label>
+                            <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Select Room / Suite</label>
+                            <select class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+                                <option>Alpine Sanctuary Suite</option>
+                                <option>Willow Creek Chalet</option>
+                                <option>Grand Double Suite</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Subject / Inquiry</label>
-                        <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Check-in Date</label>
+                            <input type="date" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Check-out Date</label>
+                            <input type="date" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent">
+                        </div>
                     </div>
+
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Message</label>
-                        <textarea rows="4" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent"></textarea>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Message / Special Request</label>
+                        <textarea rows="4" required placeholder="Let us know if you have any special requirements..." class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-accent"></textarea>
                     </div>
+
                     <button type="submit" class="w-full bg-brand-green hover:bg-brand-dark text-white py-3.5 rounded-lg text-xs font-bold uppercase tracking-widest transition shadow-md">
-                        Send Email Message
+                        Send Inquiry Message
                     </button>
                 </form>
             </div>
@@ -125,21 +151,21 @@
                             <div class="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-accent shrink-0"><i class="fa-solid fa-location-dot"></i></div>
                             <div>
                                 <strong class="block text-brand-dark text-xs uppercase tracking-wider mb-0.5">Location</strong>
-                                <span class="text-xs">742 Alpine Ridge Road, Banff National Park, AB, Canada</span>
+                                <span class="text-xs">VIP Road, Near Upper Lake, Bhopal, Madhya Pradesh, India</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
                             <div class="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-accent shrink-0"><i class="fa-solid fa-phone"></i></div>
                             <div>
                                 <strong class="block text-brand-dark text-xs uppercase tracking-wider mb-0.5">Phone / WhatsApp</strong>
-                                <span class="text-xs">+1 (555) 234-5678</span>
+                                <span class="text-xs">+91 (755) 234-5678</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
                             <div class="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-accent shrink-0"><i class="fa-solid fa-envelope"></i></div>
                             <div>
                                 <strong class="block text-brand-dark text-xs uppercase tracking-wider mb-0.5">Email Support</strong>
-                                <span class="text-xs">stay@cozystay.com</span>
+                                <span class="text-xs">stay@hotelbhopal.com</span>
                             </div>
                         </li>
                     </ul>
@@ -151,9 +177,9 @@
                     </div>
                 </div>
 
-                <!-- Embedded Google Map -->
+                <!-- Embedded Google Map for Bhopal, India -->
                 <div class="rounded-2xl overflow-hidden shadow-md h-64 border border-gray-200">
-                    <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.8!2d-115.5708!3d51.1784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sca!4v1600000000000" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117223.49755490088!2d77.3484218!3d23.2599333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68f95%3A0x7f4ea92f8ce6b0be!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1650000000000" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
 
@@ -166,105 +192,86 @@
     </a>
 
     <!-- Footer -->
-<footer class="bg-gradient-to-b from-brand-dark via-stone-950 to-black text-white pt-24 pb-12 relative overflow-hidden border-t border-brand-accent/20">
-    <!-- Decorative Ambient Glows -->
-    <div class="absolute -top-32 left-1/4 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-0 right-10 w-80 h-80 bg-emerald-900/10 rounded-full blur-3xl pointer-events-none"></div>
+    <footer class="bg-gradient-to-b from-brand-dark via-stone-950 to-black text-white pt-24 pb-12 relative overflow-hidden border-t border-brand-accent/20">
+        <div class="absolute -top-32 left-1/4 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-10 w-80 h-80 bg-emerald-900/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        <!-- Top Section: Asymmetric Split (Massive Brand vs Structured Links) -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-white/10">
-            
-            <!-- Left Side: Brand Statement & Socials (Span 5) -->
-            <div class="lg:col-span-5 space-y-8">
-                <div>
-                    <span class="text-xs uppercase tracking-[0.3em] text-brand-accent font-semibold block mb-2">Mountain Sanctuary</span>
-                    <a href="index.html" class="font-serif text-4xl sm:text-5xl font-bold tracking-wide text-white block">Hotel bhopal</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-white/10">
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-[0.3em] text-brand-accent font-semibold block mb-2">Mountain Sanctuary</span>
+                        <a href="index.html" class="font-serif text-4xl sm:text-5xl font-bold tracking-wide text-white block">Hotel Bhopal</a>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light max-w-md">
+                        An exclusive mountain retreat designed for travelers seeking serenity, comfort, and uncompromising natural beauty amidst the alpine peaks.
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xs text-gray-500 uppercase tracking-widest mr-2">Follow</span>
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#" aria-label="Twitter" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-twitter text-xs"></i></a>
+                    </div>
                 </div>
-                <p class="text-sm text-gray-400 leading-relaxed font-light max-w-md">
-                    An exclusive mountain retreat designed for travelers seeking serenity, comfort, and uncompromising natural beauty amidst the alpine peaks.
-                </p>
-                
-                <!-- Social Pills -->
-                <div class="flex items-center space-x-3">
-                    <span class="text-xs text-gray-500 uppercase tracking-widest mr-2">Follow</span>
-                    <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                    <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-instagram text-xs"></i></a>
-                    <a href="#" aria-label="Twitter" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-dark hover:bg-brand-accent hover:border-brand-accent transition duration-300"><i class="fa-brands fa-twitter text-xs"></i></a>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8 lg:pl-12">
+                    <div class="space-y-4">
+                        <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Explore</h4>
+                        <ul class="space-y-3 text-xs text-gray-300 font-light">
+                            <li><a href="index.html" class="hover:text-brand-accent transition">Home</a></li>
+                            <li><a href="rooms.html" class="hover:text-brand-accent transition">Rooms & Amenities</a></li>
+                            <li><a href="gallery.html" class="hover:text-brand-accent transition">Gallery</a></li>
+                            <li><a href="contact.html" class="hover:text-brand-accent transition">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Residences</h4>
+                        <ul class="space-y-3 text-xs text-gray-300 font-light">
+                            <li><a href="rooms.html" class="hover:text-brand-accent transition">Alpine Sanctuary Suite</a></li>
+                            <li><a href="rooms.html" class="hover:text-brand-accent transition">Willow Creek Chalet</a></li>
+                            <li><a href="rooms.html" class="hover:text-brand-accent transition">Grand Double Suite</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Direct</h4>
+                        <ul class="space-y-3 text-xs text-gray-300 font-light">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>VIP Road, Bhopal, India</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-phone text-brand-accent shrink-0"></i>
+                                <a href="tel:+917552345678" class="hover:text-brand-accent transition">+91 (755) 234-5678</a>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-envelope text-brand-accent shrink-0"></i>
+                                <a href="mailto:stay@hotelbhopal.com" class="hover:text-brand-accent transition">stay@hotelbhopal.com</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Right Side: Links & Contact Grouped Creatively (Span 7) -->
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8 lg:pl-12">
-                
-                <!-- Navigation -->
-                <div class="space-y-4">
-                    <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Explore</h4>
-                    <ul class="space-y-3 text-xs text-gray-300 font-light">
-                        <li><a href="index.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Home</a></li>
-                        <li><a href="rooms.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Rooms & Amenities</a></li>
-                        <li><a href="gallery.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Gallery</a></li>
-                        <li><a href="contact.html" class="hover:text-brand-accent transition-colors duration-200 inline-block hover:translate-x-1 transform">Contact Us</a></li>
-                    </ul>
+            <div class="py-12 border-b border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-1 text-center md:text-left">
+                    <h4 class="font-serif text-lg font-medium text-white">Receive Seasonal Invitations</h4>
+                    <p class="text-xs text-gray-400">Be the first to experience our private winter retreats and exclusive offers.</p>
                 </div>
-
-                <!-- Chalets -->
-                <div class="space-y-4">
-                    <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Residences</h4>
-                    <ul class="space-y-3 text-xs text-gray-300 font-light">
-                        <li><a href="room-detail.html?room=alpine-suite" class="hover:text-brand-accent transition-colors duration-200 inline-block">Alpine Sanctuary Suite</a></li>
-                        <li><a href="room-detail.html?room=willow-chalet" class="hover:text-brand-accent transition-colors duration-200 inline-block">Willow Creek Chalet</a></li>
-                        <li><a href="room-detail.html?room=double-suite" class="hover:text-brand-accent transition-colors duration-200 inline-block">Grand Double Suite</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Meta -->
-                <div class="space-y-4">
-                    <h4 class="font-serif text-xs font-bold uppercase tracking-[0.2em] text-brand-accent">Direct</h4>
-                    <ul class="space-y-3 text-xs text-gray-300 font-light">
-                        <li class="flex items-start gap-2.5">
-                            <i class="fa-solid fa-location-dot text-brand-accent mt-0.5 shrink-0"></i>
-                            <span>742 Alpine Ridge Road, bhopal, India</span>
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <i class="fa-solid fa-phone text-brand-accent shrink-0"></i>
-                            <a href="tel:+15552345678" class="hover:text-brand-accent transition"> +1 (555) 234-5678</a>
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <i class="fa-solid fa-envelope text-brand-accent shrink-0"></i>
-                            <a href="mailto:stay@hotelbhopal.com" class="hover:text-brand-accent transition">stay@hotelbhopal.com</a>
-                        </li>
-                    </ul>
-                </div>
-
+                <form class="flex w-full md:w-auto max-w-md items-center">
+                    <input type="email" placeholder="Your email address" class="bg-white/5 border border-white/10 text-xs px-4 py-3.5 rounded-l-md focus:outline-none focus:border-brand-accent text-white placeholder-gray-500 w-full md:w-72 transition">
+                    <button type="submit" class="bg-brand-accent text-brand-dark font-medium text-xs px-6 py-3.5 rounded-r-md hover:bg-white transition whitespace-nowrap">Join</button>
+                </form>
             </div>
-        </div>
 
-        <!-- Middle Section: Floating Newsletter Card Banner -->
-        <div class="py-12 border-b border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="space-y-1 text-center md:text-left">
-                <h4 class="font-serif text-lg font-medium text-white">Receive Seasonal Invitations</h4>
-                <p class="text-xs text-gray-400">Be the first to experience our private winter retreats and exclusive offers.</p>
-            </div>
-            <form class="flex w-full md:w-auto max-w-md items-center">
-                <input type="email" placeholder="Your email address" class="bg-white/5 border border-white/10 text-xs px-4 py-3.5 rounded-l-md focus:outline-none focus:border-brand-accent text-white placeholder-gray-500 w-full md:w-72 transition">
-                <button type="submit" class="bg-brand-accent text-brand-dark font-medium text-xs px-6 py-3.5 rounded-r-md hover:bg-white transition whitespace-nowrap">Join</button>
-            </form>
-        </div>
-
-        <!-- Bottom Copyright & Legal Links -->
-        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
-            <p>&copy; 2026 Hotel bhopal. All rights reserved. Curated for the wild.</p>
-            <div class="flex space-x-6">
-                <a href="#" class="hover:text-gray-300 transition">Privacy Policy</a>
-                <a href="#" class="hover:text-gray-300 transition">Terms of Service</a>
-                <a href="#" class="hover:text-gray-300 transition">Cookies</a>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 Hotel Bhopal. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gray-300 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-300 transition">Terms of Service</a>
+                </div>
             </div>
         </div>
-
-    </div>
-</footer>
+    </footer>
 
     <script>
         const menuBtn = document.getElementById('menu-btn');
